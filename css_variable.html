@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root{
+            --light-color:rgb(150, 150, 153);
+            --primary-color:green;
+            --secondary-color:cyan;
+        }
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            background-color: var(--light-color);
+           
+        }
+        h1{
+            text-align: center;
+            background-color: blueviolet;
+            border-bottom: 4px var(--secondary-color) solid;
+        }
+        .container{
+            display:flex;
+            border: 4px cornflowerblue solid;
+
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Css Variable
+        </h1>
+    </header>
+    <div class="container">
+        <div class="box box-1">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dicta? Incidunt quas qui quasi eos earum veritatis inventore aspernatur quis?</p>
+            
+        </div>
+        <div class="box box-2">
+            <h3>Heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dicta? Incidunt quas qui quasi eos earum veritatis inventore aspernatur quis?</p>
+
+        </div>
+    </div>
+    
+</body>
+</html>

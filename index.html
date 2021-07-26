@@ -56,45 +56,82 @@
         <!--complete list of meta tags at - https://gist.github.com/lancejpollard/1978404 -->
         <link href="https://font.googleapis.com/css?family=Raleway" rel="stylesheet"/>
         <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            
             body{
                 font-family:cambria;
+                background-color: gray;
+            }
+            .main-container{
+                
+                
             }
 
             .nav{
                 background-color: black;
-                margin:0;
+                margin:-10px;
             }
             .nav ul{
-                padding: 20px;
                 margin: 10px;
             }
             .nav li{
                 display: inline;
                 margin: 10px;
             }
-           .nav a{
+           .nav ul, a{
+            padding: 20px;
             color: white;
             text-decoration: none;
             font-size: 25px;
            }
+           .nav a:hover{
+               background-color: silver;
+              
+           }
            .about-im{
+               
                background-color: gray;
-               border: 3px solid black;
+               border: 1px solid lightslategray;
+               
              
            }
            .work{
                background-color: gray;
-               border: 3px solid black;
+               border: 1px solid black;
+               
            }
            .contact-class{
                background-color: gray;
-               border: 3px solid black;
+               border: 1px solid lightslategray;
+           }
+           .fill-form{
+               background-color: gray;
            }
            .image .header-image{
                height: 50%;
                width:100%;
            }
-           
+           p{
+               text-align: justify;
+               color:whitesmoke;
+           }
+           h1, h2{
+               color:whitesmoke;
+           }
+           .fill-form{
+               width:30%;
+           }
+           .txt{
+               margin: 14px;
+               padding:5px;
+               max-width: 90%;
+               border-radius: 5px;
+               border: none;
+                
+           }
          
            .social{
               
@@ -144,7 +181,28 @@
                text-align: center;
            }
            
-          
+          /* Newest */
+          .About-container{
+              display: flex;
+              background-color: gray;
+              
+
+          }
+          .About-container .about-im{
+              margin-left: 20%;
+              width:70%;
+          }
+          .About-container + .work{
+              
+              margin-left:20%;
+              width:70%;
+              border:none;
+          }
+          .pro-img{
+              margin-left: 40%;
+              border-radius: 100%;
+          }
+
            
 
         </style>
@@ -153,53 +211,70 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="nav">
-            <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-               
-            </ul>
-        </div>
-        <div class="image">
-            <img src="images/Programming-Quotes.jpg" alt="Bg-Image" class="header-image" >
-        </div>
-
-        <div class="about-im">
-            <h1>About</h1>
+        <div class="main-container">
+            <div class="nav">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                
+                </ul>
+            </div>
+            <div class="image">
+                <img src="images/Programming-Quotes.jpg" alt="Bg-Image" class="header-image" >
+            </div>
             
-            <p>A professional front-end and desktop app developer with few years of experience. Proficient in HTML, CSS, VB.Net, Python, and Django. Dedicated to meeting customer requirements with innovative solutions that maximize efficiency and exceed capability targets</p>
-        </div>
-
-        <div id="work" class="work">
-            <h2>Work</h2>
-            
-            <p>Analyze client-specified problems to develop software solutions that fulfill operational requirements. Consistently use in-depth knowledge of budgetary issues affecting development and implementation to create cost-effective solutions</p>
-        </div>
-        <div id="contact" class="contact-class">
-            <h2 id="con">Contact</h2>
-            <p id="con1">Address: #74 Wuse Zone 3 Abuja</p>
-            <p id="con2">Phone number: 08107914902</p>
-            <p id="con3">Email address: ekemiben.4@gmail.com</p>
-        </div>
-       
-        <footer class="social">
-            <h2>You can fine me on ...</h2>
-            
-            
-            <ul class="social-media">
-              <li><a href="https://twitter.com/EkeminiBen3?s=09" target="_blank"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/ekemini-ben-38b21219a/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://mobile.facebook.com/home.php" target="_blank"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li><a id="profile-link" href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
-            <P class="fut">Copyright &copy;2021</P>
-        </footer>
+            <div class="About-container">
+                <div class="pixcontainer">
+                    <img src="images/to use.PNG" alt="Programmer's pix" class="pro-img">
+                    <input type="button" value="Hire Me">
+                </div>
+                <div class="about-im">
+                    <h1>About</h1>
+                    
+                    <p>A professional front-end and desktop app developer with few years of experience. Proficient in HTML, CSS, VB.Net, Python, and Django. Dedicated to meeting customer requirements with innovative solutions that maximize efficiency and exceed capability targets</p>
+                </div>
+            </div>
+            <div id="work" class="work">
+                <h2>Work</h2>
+                
+                <p>Analyze client-specified problems to develop software solutions that fulfill operational requirements. Consistently use in-depth knowledge of budgetary issues affecting development and implementation to create cost-effective solutions</p>
+            </div>
+            <form action="POST" class="form-1">
+                <div class="fill-form">
+                    <input type="text" name="name" placeholder="Enter Your Full Name" class="txt">
+                    <input type="email" name="email" placeholder="Enter Your Emaill Address" class="txt">
+                    <textarea name="description" id="descriptioin" cols="30" rows="10" placeholder="Message" class="txtarea"></textarea>
+                    <input type="button" value="Submit" class="btn">
+                </div>
+           
+                <div id="contact" class="contact-class">
+                    <h2 id="con">Contact</h2>
+                    <p id="con1">Address: #74 Wuse Zone 3 Abuja</p>
+                    <p id="con2">Phone number: 08107914902</p>
+                    <p id="con3">Email address: ekemiben.4@gmail.com</p>
+                </div>
+            </form>
         
+            <footer class="social">
+                <h2>You can fine me on ...</h2>
+                
+                
+                <ul class="social-media">
+                <li><a href="https://twitter.com/EkeminiBen3?s=09" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ekemini-ben-38b21219a/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://mobile.facebook.com/home.php" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a id="profile-link" href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+                <P class="fut">Copyright &copy;2021</P>
+            </footer>
+            
+            
+            
+            <link rel="stylesheet" type="text/css" href="/" media="print" />
+            <script src="" async defer></script>
+        </div>
         
-        
-        <link rel="stylesheet" type="text/css" href="/" media="print" />
-        <script src="" async defer></script>
     </body>
 </html>
