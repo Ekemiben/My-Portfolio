@@ -58,16 +58,28 @@
         .but input:hover{
             cursor: pointer;
         }
-        @media screen and (min-width: 360px){
+        /* @media screen and (min-width: 360px){
             body{
                 
             }
-        }
-        @media screen and (min-width: 360px){
-            .grid-container{
+        } */
+        @media (min-width: 320px){
+            .grid-container { grid-template-columns: auto;
 
             }
         }
+
+        @media (min-width:124px){
+            .grid-container {grid-template-columns: auto auto;}
+        }
+
+
+        /* @media only screen and (max-width: 768px) {
+       
+        .grid-container {grid-template-columns:auto ;
+        width: 100%;
+        }
+        } */
             
         
 
