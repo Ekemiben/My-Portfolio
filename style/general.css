@@ -144,24 +144,19 @@ h3{
     text-align: center;
 }
 /* Button */
-.main ul{
-    margin:20px 20px 20px 50px;
-}
-.main li{
-    width: 100px;
-    height:40px;
-    list-style-type: none;
-    cursor: pointer;
-    
-}
+
 .main a{
-   
+    margin:20px 20px 20px 50px;
+    display: inline-block;
+    padding: 15px;
     color: white;
     text-decoration: none;
     font-size: 18px;
     background-color:gray;
     border: 2px solid black;
-    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+
     
     
 }
@@ -173,34 +168,41 @@ h3{
     background-color: black;
     color: white;
     justify-content: center;
+    height: 160px;
     
     
 }
 
 .trans-shape{
-   width: 100px;
-   height: 100px;
+   width: 60px;
+   height: 60px;
    background-color:darkolivegreen;
+   
    
    margin: 20px;
    transition: width 2s, height 2s, transform 2s;
    
+   
 }
 .trans-shape:hover{
-   width:300px;
-   height:300px;
+   width:150px;
+   height:150px;
    border-radius: 100px;
    background-color:darkorchid;
    transform: rotate(180deg);
+   
 }
 .transition h4{
    margin: 20px 20px;
+}
+.transition .trans-shape{
+    align-self: flex-end;
 }
 
 
 
 /* Animation */
-.animate{
+/* .animate{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -239,6 +241,24 @@ h3{
     
     animation-fill-mode: forwards;
     animation-iteration-count: infinite; 
+} */
+@keyframes happiness{
+    0%{color:white;}
+    15%{color:burlywood;}
+    30%{color:cornflowerblue;}
+    45%{color:darkkhaki;}
+    60%{color:darkolivegreen;}
+    75%{color:orchid;}
+    85%{color:darkturquoise;}
+    100%{color:greenyellow;}
+}
+.left-side h3{
+    position: relative;
+    animation-name:happiness;
+    animation-fill-mode: both;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
 }
 
 /* Button */
@@ -262,18 +282,15 @@ h3{
 
 footer{
     display: flex;
-    
     background-color:black;
     color: white;
-
-}
-footer{
-    display: flex;
-    /* align-items:center; */
     height:100px;
     justify-content: space-evenly;
+    border-top: 4px solid white;
+    
 
 }
+
 footer ul{
     display: flex;
     
