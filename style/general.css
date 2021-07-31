@@ -42,6 +42,22 @@ nav a{
 nav a:hover{
     background-color: silver;
 }
+/* Toggle mode */
+/* nav img{
+    width: 50px;
+    height:50px;
+    margin: 20px;
+    background-color: black;
+    border-radius: 50px;
+
+}
+nav img:hover{
+    cursor: pointer;
+
+}
+nav img{
+    
+} */
 
 /* Section Items */
 section{
@@ -59,7 +75,7 @@ section img{
     
 }
 /* Main Content */
-article{
+section{
     background-color:black;
        display: flex;
        flex-wrap: wrap;
@@ -254,6 +270,7 @@ footer{
 footer{
     display: flex;
     /* align-items:center; */
+    height:100px;
     justify-content: space-evenly;
 
 }
@@ -276,6 +293,9 @@ footer img{
     border-radius: 50%;
 
 }
+footer .fut{
+    align-self: flex-end;
+}
 /* iPhon5 */
 @media  (max-width:320px) {
     .nav {
@@ -295,7 +315,7 @@ footer img{
 }
 
 @media screen and (min-width: 320px){
-    .article{ flex: 100%;
+    .section{ flex: 100%;
 
     }
 }
@@ -318,7 +338,7 @@ footer img{
 }
 
 @media screen and (min-width: 375px){
-    .article{ flex: 100%;
+    .section{ flex: 100%;
 
     }
 }
@@ -341,7 +361,7 @@ footer img{
 }
 
 @media screen and (min-width: 414px){
-    .article{ flex: 100%;
+    .section{ flex: 100%;
 
     }
 }
@@ -364,7 +384,7 @@ footer img{
 }
 
 @media screen and (min-width: 360px){
-    .article{ flex: 100%;
+    .section{ flex: 100%;
 
     }
 }
