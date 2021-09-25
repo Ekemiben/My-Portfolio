@@ -122,12 +122,7 @@ section{
     margin: 3% 7%;
 }
 
-aside{
-    background-color: lightgray;
-}
-footer{
-    background-color: indianred;
-}
+
 /* dealing with text */
 p{
     /* justify-content: center; */
@@ -142,6 +137,11 @@ h3{
 #con1, #con2, #con3{
     line-height: 40px;
     text-align: center;
+}
+
+.middle #tope{
+    align-self: flex-start;
+    
 }
 /* Button */
 
@@ -177,16 +177,12 @@ h3{
    width: 60px;
    height: 60px;
    background-color:darkolivegreen;
-   
-   
    margin: 20px;
-   transition: width 2s, height 2s, transform 2s;
+   transition: all 3s ease-in-out;
    
    
 }
 .trans-shape:hover{
-   width:150px;
-   height:150px;
    border-radius: 100px;
    background-color:darkorchid;
    transform: rotate(180deg);
@@ -201,47 +197,7 @@ h3{
 
 
 
-/* Animation */
-/* .animate{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
-}
-@keyframes ani1{
-    
-    to{width: 0.265rem;}
-}
-
-.animation-1{
-    width:38.75rem;
-    height: 100px;
-    background-color: black;
-    
-    animation-name: ani1;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
-    animation-iteration-count: infinite; 
-}
-
-@keyframes ani2{
-    
-    to{width: 0.265rem;}
-}
-.animation-2{
-    width:38.75rem;
-    height: 100px;
-    background-color: black;
-
-    animation-name: ani2;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite; 
-} */
 @keyframes happiness{
     0%{color:white;}
     15%{color:burlywood;}
@@ -276,6 +232,15 @@ h3{
     border-radius: 100%;
 }
 
+.btnsubmit:hover{
+    cursor: pointer;
+    width: 81%;
+   
+    border: 2px black solid;
+    font-size: 18px;
+
+}
+
 
 
 /* footer*/
@@ -284,7 +249,7 @@ footer{
     display: flex;
     background-color:black;
     color: white;
-    height:100px;
+    height:20vh;
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-top: 4px solid white;

@@ -38,10 +38,10 @@
 
         <!-- Left Hand Side -->
         <div class="left-side">
-            <h3 class="animated-two">Your Problems Could Be Solved Programmatically.</h3>
-            <h3 class="animated-two">Ben, Ekemini Sunday Is My Name</h3>
+           
 
-            <a href="#hire" class="hire">Hire Me</a>
+            <a  class="hire" onclick="bottonclick()">Hire Me</a>
+            <!-- <a  class="hire" onclick="bottonclick()">Hire On</a> -->
             <img src="images/Facebook Picks.jpg" alt="Web Developer">
             
             
@@ -49,14 +49,16 @@
 
         <!-- Middle -->
         <div class="middle">
-            <!-- <div class="try">
-                <p>Have You Try a Programmer Before ...?</p>
-            </div> -->
+            <h3 id="tope">Have You Ever Try A Programmer Before . . .</h3>
+           <br><br>
+            <div class="left-side">
+                
+                <h3 class="animated-two">Your Problems Could Be Solved Programmatically.</h3>
+                <h3 class="animated-two">Ben, Ekemini Sunday Is My Name</h3>
             
-            <h3>Work Experience</h3>
-            <p>Analyze client-specified problems to develop software solutions that fulfill operational requirements. Consistently use in-depth knowledge of budgetary issues affecting development and implementation to create cost-effective solutions</p>
-            </p>
-            <br><br>
+            </div>
+            <br><br><br><br>
+            <div><a href="about.html">Read More</a></div>
 
            
         </div>
@@ -65,17 +67,19 @@
         <div class="right-hand" id="hire">
             <div id="contact" class="contact-me">
                 <h3>Contact Me</h3>
-                <p id="con1">Address: #74 Wuse Zone 3 Abuja</p>
+                <p id="con1">Address: House 38, 1st Avenue Efab City Estate Life Camp, Abuja</p>
                 <p id="con2">Phone number: 08107914902</p>
                 <p id="con3">Email address: ekemiben.4@gmail.com</p>
             </div>
-            <form action="POST" class="fill-form">
+            <form name="contact" method="POST" data-netlify="true" class="fill-form">
                 <input type="text" name="text" id="txt" placeholder="Full name ...">
                 <input type="tel" name="number" id="num" placeholder="Phone number ...">
                 <input type="email" name="email" id="email" placeholder="Your email address ...">
                 <textarea name="text" id="txtarea" cols="30" rows="10" placeholder="Brief description"></textarea>
                 <br>
-                <input type="button" value="Submit">
+                <!-- <a href="mailto:ekemiben.4@mail.com">Send</a> -->
+                <input type="submit" value="Submit" class="btnsubmit" >
+               
             </form>
 
         </div>
@@ -85,24 +89,7 @@
 
 
     </article>
-    <!-- Transition -->
-    <div class="transition">
-        <h4>Transition Effect</h4>
-        
-        <div class="trans-shape"> 
-            
-        </div>
-    </div>
-    <!-- <div id="animation" class="animate">
-        
-        <div>
-            <div class="animation-1"></div>
-        </div>
-        
-        <div>
-            <div class="animation-2"></div>
-        </div>
-    </div> -->
+  
 
     <!-- Button -->
     <div id="upbtn">
@@ -132,6 +119,8 @@
         
     </footer>
 
+
+    <script src="functionality.js"></script>
     
 </body>
 </html>

@@ -4,33 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/general.css">
+
     <title>Gallary</title>
 
     <style>
         *{
             box-sizing: border-box;
+            padding:0;
+            margin:0;
         }
         body{
-            background-color:olivedrab;
+            background-color:black;
 
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 20px;
+    
         }
+        .main-container{
+            
+        }
+        .gridpix{
+           
+         
+        }
+       
         .grid-container{
+            background-color:olivedrab;
+           
             display: grid;
             grid-template-columns: auto auto auto;
-            grid-row-gap: 1px;
-            grid-column-gap: 1px;
-            grid-gap:5px 5px;
-            grid-row-start: 1;
+            grid-template-rows: 38% auto auto;
             border-top: 12px solid mintcream;
-          
+            margin: 4px;
+            
+            
+            
+
         }
         .grid-container img{
-            padding: 5px;
-            margin: 7px;
-            width: 100%;
-            height: 100%;
+            margin: 5px;
+            width: 90%;
+            height: 90%;
             border-radius: 10%;
         }
+         .grid-container .imgone{
+             /* height: 50%; */
+         }
+
+         .about-im{
+             position: relative;
+            
+             border:3px dashed white;
+             max-width: 70%;
+             margin: auto;
+         }
+        
+
+
         h1{
             text-align: center;
             color: white;
@@ -46,72 +78,181 @@
             max-width: 30% auto;
         }
         .but input{
-            margin:10px;
+            position: relative;
+            left:40%;
+            margin:30px;
             padding:5px;
-            background-color:green;
+            background-color:gray;
             color: white;
             width: 20%;
+
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
             border-radius: 20px;
         }
+        .send{
+                margin:20px 20px 20px 50px;
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        background-color:gray;
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 5px;
+        }
+
         .but input:hover{
             cursor: pointer;
+        } 
+        .fill-form{
+            position: relative;
+            left: 20%;
+            max-width: 30%;
+            margin: auto;
         }
-        /* @media screen and (min-width: 360px){
-            body{
+
+        .btnsubmit:hover{
+            cursor: pointer;
+            width: 81%;
+        
+            border: 2px black solid;
+            font-size: 18px;
+
+        }
+        
+        /* Form Section */
+        @media (max-width:320px){
+            .grid-container{
+                grid-template-columns: auto;
                 
             }
-        } */
-        @media (min-width: 320px){
-            .grid-container { grid-template-columns: auto;
-
+        }
+        @media (max-width:375px){
+            .grid-container{
+                grid-template-columns: auto;
+                
+            }
+        }
+        @media (max-width:414px){
+            .grid-container{
+                grid-template-columns: auto;
+                
+            }
+        }
+        @media (max-width:768px){
+            .grid-container{
+                grid-template-columns: auto;
+                
             }
         }
 
-        @media (min-width:124px){
-            .grid-container {grid-template-columns: auto auto;}
-        }
-
-
-        /* @media only screen and (max-width: 768px) {
-       
-        .grid-container {grid-template-columns:auto ;
-        width: 100%;
-        }
-        } */
-            
+            /* .grid-container{
+                grid-template-rows: 30%;
+            } */
+            /* .grid-container .imgone{
+                height: 100%;
+            } */
         
+   
 
 
     </style>
 </head>
 <body>
+
+    <nav>
+        <div>
+            <ul>
+                <li><a href="index.html" id="topbtn">Home</a></li>
+                <!-- <li><a href="#animation">Animation</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="About.html" target="-blank">About</a></li> -->
+                <!-- <img src="images/upicon.png" alt="Dark Moede Pix"> -->
+            </ul>
+        </div>
+
+    </nav>
+
     <div class="main-container">
-        <h1>TIIDELAB MOMENT</h1>
+        
         <div class="about-im">
             <h1>About</h1>
             
-            <p>A professional front-end and desktop app developer with few years of experience. Proficient in HTML, CSS, VB.Net, Python, and Django. Dedicated to meeting customer requirements with innovative solutions that maximize efficiency and exceed capability targets</p>
+            <p>Ekemini Sunday Ben, is a recent Front-End software engineer with less than a year of experience in building enterprise applications. He has an extensive knowledge of software development cycle and proficient in several programming languages such as VB.Net, HTML, CSS, JavaScript and Python. 
+                He is graduate of computer science from Akwa Ibom State Polytechnic Ikot Osurua. He did his professional course on data science and machine learning in WorldQuant University U.S.A. He is a model, a great thinker, a problem solver and a good team player. He loves playing football, musical instrument (keyboard), learning and travelling. He is ready and available for remote work anyway in the world. 
+                </p>
            
         </div>
         <div class="but">
-            <input type="button" value="Hire Me" >
+            <input type="button" value="Hire Me" onclick="bottonclick()">
         </div>
+        <h3>Photo Gallary</h3>
         
-        <div class="grid-container">
-            <img src="images/20210723_092720.jpg" alt="Tiidelab Galary">
-            <img src="images/20210723_151914.jpg" alt="Tiidelab Galary">
-            <img src="images/20210723_161337.jpg" alt="Tiidelab Galary">
-            <img src="images/20210723_162849.jpg" alt="Tiidelab Galary">
-            <img src="images/20210723_162903.jpg" alt="Tiidelab Galary">
-            <img src="images/20210723_163106.jpg" alt="Tiidelab Galary">
-            <img src="images/20210723_163128.jpg" alt="Tiidelab Galary">
-            <img src="images/IMG_20210723_155506.jpg" alt="Tiidelab Galary">
-            <img src="images/IMG_20210723_155607.jpg" alt="Tiidelab Galary">
-        </div>
+      
     </div>
 
+   
+        <!-- <div class="grid-container">
+                <img src="images/20210723_092720.jpg" alt="Tiidelab Galary" class="imgone">
+                <img src="images/20210723_151914.jpg" alt="Tiidelab Galary" class="imgtwo">
+                <img src="images/20210723_161337.jpg" alt="Tiidelab Galary" class="imgthree">
+                <img src="images/20210723_162849.jpg" alt="Tiidelab Galary" class="imgfour">
+                <img src="images/20210723_162903.jpg" alt="Tiidelab Galary" class="imgfive">
+                <img src="images/20210723_163106.jpg" alt="Tiidelab Galary" class="imgsix">
+                <img src="images/20210723_163128.jpg" alt="Tiidelab Galary" class="imgseven">
+                <img src="images/IMG_20210723_155506.jpg" alt="Tiidelab Galary" class="imgeight">
+                <img src="images/IMG_20210723_155607.jpg" alt="Tiidelab Galary" class="imgnine">
+        </div>
+     -->
+
+    <div class="right-hand" id="hire">
+        <div id="contact" class="contact-me">
+            <h3>Contact Me</h3>
+            <p id="con1">Address: House 38, 1st Avenue Efab City Estate Life Camp, Abuja</p>
+            <p id="con2">Phone number: 08107914902</p>
+            <p id="con3">Email address: ekemiben.4@gmail.com</p>
+        </div>
+        <form name ="contact"method="POST" class="fill-form" data-netlify = "true">
+            <input type="text" name="text" id="txt" placeholder="Full name ...">
+            <input type="tel" name="number" id="num" placeholder="Phone number ...">
+            <input type="email" name="email" id="email" placeholder="Your email address ...">
+            <textarea name="text" id="txtarea" cols="35" rows="10" placeholder="Brief description"></textarea>
+            <br>
+            <!-- <a href="mailto:ekemiben.4@mail.com" class="send">Send</a> -->
+            
+           
+            <input type="submit" value="Submit"class= "btnsubmit">
+
+        </form>
+
+    </div>
+
+
+    <footer>
+        <h4> Find me on ...</h4>
+
+
+        <div class="link_pix">
+            <ul>
+                <li><a href="https://mobile.facebook.com/home.php" target = "_blank"><img src="images/1260673.png" alt="Face-Book-Picture" ></a></li>
+                <li><a href="https://www.linkedin.com/in/ekemini-ben-38b21219a/" target = "_blank"><img src="images/LinkedIn_logo_initials.png" alt="linkedin Picture" ></a></li>
+                <li><a href="https://twitter.com/EkeminiBen3?s=09" target = "_blank"><img src="images/kiev-ukraine-april-16-2015-260nw-275817101.jpg" alt="Tweeter Picture" ></a></li>
+                <li><a href="https://resume.io/r/B5N6b6IoS"target="_blank"><img src="images/resume2.png" alt="Resume-Pix"></a></li>
+            </ul>
+            
+            
+            <P class="fut">Copyright &copy;2021</P>
+        </div>
+        <br>
+        <br>
+       
+
+        
+    </footer>
+
+<script src="functionality.js"></script>
     
 </body>
 </html>
