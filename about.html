@@ -22,13 +22,9 @@
             font-size: 20px;
     
         }
-        .main-container{
-            
-        }
-        .gridpix{
-           
+      
          
-        }
+        
        
         .grid-container{
             background-color:olivedrab;
@@ -49,9 +45,7 @@
             height: 90%;
             border-radius: 10%;
         }
-         .grid-container .imgone{
-             /* height: 50%; */
-         }
+        
 
          .about-im{
              position: relative;
@@ -106,12 +100,44 @@
         .but input:hover{
             cursor: pointer;
         } 
-        .fill-form{
+        /* .fill-form{
             position: relative;
             left: 20%;
             max-width: 30%;
             margin: auto;
-        }
+        
+        
+        
+        } */
+
+
+
+
+        .right-hand .fill-form1{
+    display: flexbox;
+    background-color:gray;
+    max-width: 30%;
+    margin: auto;
+    flex-wrap: wrap;
+   
+}
+.fill-form1 input{
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    margin: 3% 7%;
+    border:none;
+}
+.fill-form1 textarea{
+    margin: 3% 7%;
+}
+
+
+
+
+
+
+
 
         .btnsubmit:hover{
             cursor: pointer;
@@ -128,10 +154,24 @@
                 grid-template-columns: auto;
                 
             }
+            .right-hand .fill-form1{
+           min-width: 90%; 
+           border-radius: 5px;
+           
+            }
+            #txtarea{
+                width:70%;
+            }
+            .main-container .but{
+                width: 100% ;
+            }
+
         }
         @media (max-width:375px){
             .grid-container{
                 grid-template-columns: auto;
+               
+                
                 
             }
         }
@@ -194,18 +234,7 @@
     </div>
 
    
-        <!-- <div class="grid-container">
-                <img src="images/20210723_092720.jpg" alt="Tiidelab Galary" class="imgone">
-                <img src="images/20210723_151914.jpg" alt="Tiidelab Galary" class="imgtwo">
-                <img src="images/20210723_161337.jpg" alt="Tiidelab Galary" class="imgthree">
-                <img src="images/20210723_162849.jpg" alt="Tiidelab Galary" class="imgfour">
-                <img src="images/20210723_162903.jpg" alt="Tiidelab Galary" class="imgfive">
-                <img src="images/20210723_163106.jpg" alt="Tiidelab Galary" class="imgsix">
-                <img src="images/20210723_163128.jpg" alt="Tiidelab Galary" class="imgseven">
-                <img src="images/IMG_20210723_155506.jpg" alt="Tiidelab Galary" class="imgeight">
-                <img src="images/IMG_20210723_155607.jpg" alt="Tiidelab Galary" class="imgnine">
-        </div>
-     -->
+      
 
     <div class="right-hand" id="hire">
         <div id="contact" class="contact-me">
@@ -214,7 +243,7 @@
             <p id="con2">Phone number: 08107914902</p>
             <p id="con3">Email address: ekemiben.4@gmail.com</p>
         </div>
-        <form name ="contact"method="POST" class="fill-form" data-netlify = "true">
+        <form name ="contact"method="POST" class="fill-form1" data-netlify = "true">
             <input type="text" name="text" id="txt" placeholder="Full name ...">
             <input type="tel" name="number" id="num" placeholder="Phone number ...">
             <input type="email" name="email" id="email" placeholder="Your email address ...">
